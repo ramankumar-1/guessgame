@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Rules of Game</title>
+        <script>
+            function backtogame(){
+                location.replace("index.html");
+            }
+        </script>
+        <style>
+            html {
+                height: 100%;
+            }
+            body {
+                min-height:105%;
+                padding: 0;
+                background-color: rgb(144, 0, 255); 
+                background-image: linear-gradient(rgb(253, 171, 219), rgb(108, 14, 176));
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Scoring rules of the Game
+        </h1>
+        <h2>
+            <ul>
+                <li>
+                    <i>Perfect Guess: </i>If the number chosen by you equals to the correct number.
+                </li><br><br>
+                <li>
+                    <i>Excellent Guess: </i>If the chosen number is within 5 units distance 
+                    from the correct number<br>Example - If the correct number was 10 and if 
+                    you chose in the range 5
+                     to 15 (including 5 & 15) then it will be an Excellent Guess.
+                </li><br><br>
+                <li>
+                    <i>Good Guess: </i>If the chosen number is within 10 units distance 
+                    from the correct number<br>Example - If the correct number was 20 and if you chose in the range 10
+                     to 30 (including 10 & 30) then it will be a Good Guess.
+                </li><br><br>
+                <li>
+                    Else the it will be a Bad guess !
+                </li>
+            </ul>
+        </h2>
+        <br><br>
+        <p>
+            <input style="text-align:center;font-size: 30px;border-radius: 12px;width: 250px;height: 45px;
+            border: 4px solid rgb(255, 98, 0);font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" type="button" value="Back to Game" onclick="backtogame()">
+        </p>
+
+    </body>
+</html>
